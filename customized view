@@ -1,0 +1,19 @@
+public View getView(int position, View view, ViewGroup parent) {
+LayoutInflater inflater=context.getLayoutInflater();
+View singleEntityView=inflater.inflate(
+
+R.layout.custpmized_laout, null,true);
+TextView titleHeading = singleEntityView.findViewById
+
+(R.id.textViewCustomViewHeading);
+ImageView imageView = singleEntityView.findViewById
+
+(R.id.imageViewCustomized);
+TextView titleDetails = singleEntityView.findViewById
+
+(R.id.textViewCutomViewDetail);
+titleHeading.setText(maintitle[position]);
+imageView.setImageResource(imgid[position]);
+titleDetails.setText(subtitle[position]);
+return singleEntityView;
+};
