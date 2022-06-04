@@ -1,0 +1,6 @@
+public class MyViewAdapter extends ArrayAdapter<Student> {
+public MyViewAdapter(@NonNull Context context,
+
+ArrayList<Student> studentArrayList) {
+super(context, 0, studentArrayList);
+}
